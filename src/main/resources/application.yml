@@ -1,0 +1,9 @@
+server:  port: 8080  servlet:    session:     timeout: 60m
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver 
+    url: jdbc:h2:mem:app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE
+    username: sa
+    password:  security:    user:      name: user      password: illusion1      h2:
+    console:      enabled: true 
+
