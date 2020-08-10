@@ -1,15 +1,15 @@
-package controller;
+package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("sample")
+@RequestMapping("/sample")
 public class HelloWorldController {
-
+	
 	@GetMapping("hello")
-	String hello() {
+	public String hello() {
 		return "sample/hello";
 	}
 }
