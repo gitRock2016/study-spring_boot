@@ -34,7 +34,7 @@ public class HelloWorldRestController {
 		System.out.println("DB:" + mgtConfProp.getDb());
 		System.out.println("Table:" + mgtConfProp.getTable());
 		System.out.println("ID:" + mgtConfProp.getAdmin().getId());
-		System.out.println("user:" + mgtConfProp.getAdmin().getUser());
+		System.out.println("password:" + mgtConfProp.getAdmin().getPass());
 		System.out.println("");
 
 		System.out.println("◆Environment");
