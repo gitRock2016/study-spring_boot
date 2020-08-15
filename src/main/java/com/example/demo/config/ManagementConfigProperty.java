@@ -15,8 +15,8 @@ public class ManagementConfigProperty {
 
 	@Data
 	public class Admin {
-		private String user;
 		private String id;
+		private String pass;
 	}
 
 }
