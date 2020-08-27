@@ -8,9 +8,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
-	// TODO ƒZƒLƒ…ƒŠƒeƒB‚ðˆêŽž“I‚É–³Œø‚É‚µ‚Ä‚¢‚é
+	// TODO ã‚»ã‚­ãƒ¥ãƒªãƒ†ã‚£ã‚’ä¸€æ™‚çš„ã«ç„¡åŠ¹ã«ã—ã¦ã„ã‚‹
 	    @Override
 	    protected void configure(HttpSecurity http) throws Exception{
-	        http.authorizeRequests().antMatchers("/").permitAll();
+	        http.authorizeRequests().antMatchers("/").permitAll()
+	        .and().authorizeRequests().antMatchers("/console/**").permitAll();
+	        
+	        http.csrf().disable();
+	        http.headers().frameOptions().disable();
+	        
 	    }
 }

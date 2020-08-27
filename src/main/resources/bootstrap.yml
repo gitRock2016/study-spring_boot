@@ -1,10 +1,11 @@
 # コンフィグサーバーの接続先は「https://github.com/gitRock2016/study-spring_Cloud_ConfigServer.git」
 spring:
   application:
-    name: study-spring_cs
+    name: serviceA
   profiles:
     active: dev
   cloud:
     config:
       uri: http://localhost:8888
       fail-fast: false
+      enabled: true
