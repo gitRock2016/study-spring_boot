@@ -43,13 +43,4 @@ public class HelloWorldRestController {
 		
 		return "Hello World!";
 	}
-	
-	/**
-	 * JUNITテスト用
-	 * @return
-	 */
-	@GetMapping("chao")
-	public String chao() {
-		return "chao";
-	}
 }
