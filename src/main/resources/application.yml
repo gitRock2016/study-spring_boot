@@ -4,6 +4,6 @@ spring:
     driver-class-name: org.h2.Driver 
     url: jdbc:h2:mem:app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE
     username: sa
-    password:  security:    user:      name: user      password: illusion1      h2:
+    password:  security:    user:      name: user      password: illusion1  redis:    host: localhost    port: 6379  h2:
     console:      enabled: true 
 
