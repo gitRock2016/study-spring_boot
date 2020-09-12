@@ -8,4 +8,5 @@ spring:
     config:
       uri: http://localhost:8888
       fail-fast: false
-      enabled: true
+      # TODO コンフィグサーバーの利用有無
+      enabled: false
