@@ -1,1 +1,1 @@
-INSERT INTO test_users ( id, value ) VALUES ( 'test_id', 'test_value' );
+INSERT INTO todo ( todo_id, todo_title, finished, created_at ) VALUES ( 1, '朝ごはんつくる', false, '2020-12-01 09:15:00' );

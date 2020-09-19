@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.example.demo.service.Message;
 
 
-@AutoConfigureMockMvc
+//@AutoConfigureMockMvc
 @SpringBootTest(classes = DemoApplication.class)
 class SampleServiceTest {
 

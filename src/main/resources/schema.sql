@@ -1,7 +1,6 @@
-CREATE TABLE IF NOT EXISTS test_users (
-  id VARCHAR(18) NOT NULL
-  , value VARCHAR(255) DEFAULT NULL
-  , created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-  , updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-  , PRIMARY KEY(id)
+create table if not exists todo (
+    todo_id int,
+    todo_title varchar(30),
+    finished boolean,
+    created_at timestamp
 );
