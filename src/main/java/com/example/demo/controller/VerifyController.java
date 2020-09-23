@@ -41,7 +41,7 @@ public class VerifyController {
 		chf.setVersion(sp.getVersion());
 		model.addAttribute("languageInfo", chf);
 		
-		Optional<Todo> todo = repo.findById(1);
+		Optional<Todo> todo = repo.findById(2);
 		Todo t = todo.get();
 		model.addAttribute("todoId", t.getTodoId());
 		model.addAttribute("todoTitle", t.getTodoTitle());
