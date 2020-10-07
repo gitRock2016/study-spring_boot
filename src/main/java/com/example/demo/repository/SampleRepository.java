@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Repository;
 
 import com.example.demo.repository.entity.Todo;
 
@@ -24,9 +23,3 @@ public interface SampleRepository {
 	@Insert("insert into todo ( todo_id, todo_title, finished, created_at ) values (#{todoId},#{todoTitle}, #{finished}, #{created_at})")
 	void insert(Todo todo);
 }
-//
-//todo_id identity,
-//todo_title varchar(30),
-//finished boolean,
-//created_at timestamp
-//);

@@ -1,15 +1,14 @@
 package com.example.demo;
 
-import org.junit.jupiter.api.Assertions;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@AutoConfigureMockMvc
 @SpringBootTest(classes = DemoApplication.class)
 class SampleTest {
-	
+
 	// テスト対象
 	// 設定値を直接取得する
 	@Value("${sampleTest.message}")
@@ -19,7 +18,7 @@ class SampleTest {
 
 	@Test
 	void テストクラスのフィールドの値を確認する() {
-		Assertions.assertEquals("こんにちわ", s_message, errmsg);
+		assertEquals(errmsg, "こんにちわ", s_message);
 	}
 
 }
