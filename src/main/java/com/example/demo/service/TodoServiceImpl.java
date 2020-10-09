@@ -28,7 +28,6 @@ public class TodoServiceImpl implements TodoService {
 		List<TodoDto> arraylist = new ArrayList<TodoDto>();
 		for(Todo td : todos) {
 			TodoDto todoDto = beanmapper(td);
-
 			arraylist.add(todoDto);
 		}
 		
