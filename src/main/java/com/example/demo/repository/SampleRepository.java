@@ -20,6 +20,9 @@ public interface SampleRepository {
 	@Select("SELECT COUNT(*) FROM todo WHERE finished = #{finished}")
 	long countByFinished(boolean finished);
 
+	@Select("SELECT * FROM todo WHERE finished = #{finished}")
+	List<Todo> findByFinished(boolean finished);
+
 	@Insert("insert into todo ( todo_id, todo_title, finished, created_at ) values (#{todoId},#{todoTitle}, #{finished}, #{created_at})")
 	void insert(Todo todo);
 }
