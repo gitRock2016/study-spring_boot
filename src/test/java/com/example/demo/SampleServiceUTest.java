@@ -40,7 +40,7 @@ class SampleServiceUTest {
 		// TODO ネットではこれが必要との記載が多いが、Extendを利用すればなくても動く
 //		MockitoAnnotations.initMocks(this);
 	}
-
+//aaaa
 	@Test
 //	@DisplayName("単一データを取得")
 	void test_findById_01() {
