@@ -1,9 +1,29 @@
-server:  port: 8080  servlet:    session:     timeout: 60m
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 60m
 spring:
   datasource:
-    driver-class-name: org.h2.Driver 
-    url: jdbc:h2:mem:app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testDB
     username: sa
-    password:  security:    user:      name: user      password: illusion1  redis:    host: localhost    port: 6379  h2:
-    console:      enabled: true 
-
+    password: null
+  security:
+    user:
+      name: user
+      password: illusion1
+  redis:
+    host: localhost
+    port: 6379
+  h2:
+    console:
+      enabled: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+sampleTest:
+  message: こんにちわ
+  language: java
+  version: 1.8
+  enabled: true
